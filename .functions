@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+hsklogin() {
+    ssh-add -e /usr/local/lib/libykcs11.dylib
+    ssh-add -s /usr/local/lib/libykcs11.dylib
+}
+
+docker-clean-active() {
+    docker stop $(docker ps -a -q)
+    docker rm -f $(docker ps -a -q)
+}
+
+docker-clean-images() {
+    docker stop $(docker ps -a -q)
+    docker rm -f $(docker ps -a -q)
+    docker rmi -f $(docker images -a -q)
+}
+
+ea_docs_build() {
+    bundle exec jekyll serve
+}

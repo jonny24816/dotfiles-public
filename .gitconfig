@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = jonathanah1996@gmail.com
+	name = Jh24816
+[push]
+    autoSetupRemote = true

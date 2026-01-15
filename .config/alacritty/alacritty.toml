@@ -1,0 +1,85 @@
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[env]
+TERM = "xterm-256color"
+
+[font.bold]
+family = "MesloLGM Nerd Font Mono"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "MesloLGM Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGM Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[font]
+size = 12
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[cursor]
+blink_interval = 500
+blink_timeout = 5
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[mouse]
+hide_when_typing = false
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[window]
+decorations = "full"
+dynamic_padding = false
+dynamic_title = true
+option_as_alt = "OnlyLeft"
+opacity = 0.95
+#startup_mode = "Maximised"
+
+[window.dimensions]
+columns = 100
+lines = 80
+
+[terminal.shell]
+program = "/bin/zsh"
+
+[window.padding]
+x = 4
+y = 4
+
+[general]
+live_config_reload = true
+
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  #"~/.config/alacritty/catppuccin-frappe.toml"
+  #"~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[terminal]
