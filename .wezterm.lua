@@ -4,6 +4,10 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+-- enable left alt
+config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = true
+
 -- colour scheme
 config.color_scheme = 'Catppuccin Mocha'
 

@@ -7,10 +7,10 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 fi
 
 if [[ $platform == "linux" ]]; then
-    source ~/dotfiles/.zshrc_linux
+    source ~/dotfiles-public/.zshrc_linux
 fi 
 if [[ $platform == "mac" ]]; then
-    source ~/dotfiles/.zshrc_mac
+    source ~/dotfiles-public/.zshrc_mac
 fi 
 
 
@@ -74,12 +74,12 @@ eval "$(zoxide init zsh)"
 
 # zsh-users plugins
 
-source ~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/dotfiles-public/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-fpath=(~/dotfiles/zsh-completions/src $fpath)
+fpath=(~/dotfiles-public/zsh-completions/src $fpath)
 
 # echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc sort of thing for adding to a setup.sh script
-source ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/dotfiles-public/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -92,5 +92,3 @@ export PATH="/Users/jonathanhughes/.rd/bin:$PATH"
 # Created by `pipx` on 2025-10-07 14:35:53
 export PATH="$PATH:/Users/jonathanhughes/.local/bin"
 
-autoload bashcompinit && bashcompinit
-source $(brew --prefix)/etc/bash_completion.d/az

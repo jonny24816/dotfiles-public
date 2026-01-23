@@ -65,6 +65,7 @@ automatically-unhide-macos-hidden-apps = true
     5 = 'main'
     6 = 'main'
     7 = ['secondary','main']
+    8 = ['main']
 
 [[on-window-detected]]
     if.app-name-regex-substring = 'finder'
@@ -94,8 +95,8 @@ automatically-unhide-macos-hidden-apps = true
     if.app-name-regex-substring = 'activity monitor'
     run = ['layout floating', 'move-node-to-workspace 7']
 [[on-window-detected]]
-    if.app-name-regex-substring = 'mac@ibm'
-    run = ['layout floating', 'move-node-to-workspace 6']
+    if.app-name-regex-substring = 'SAP'
+    run = ['layout floating', 'move-node-to-workspace 8']
 
 [[on-window-detected]]
     if.app-name-regex-substring = 'wezterm'
@@ -107,6 +108,9 @@ automatically-unhide-macos-hidden-apps = true
     if.app-name-regex-substring = 'firefox'
     run = 'move-node-to-workspace 3'
 [[on-window-detected]]
+    if.app-name-regex-substring = 'zoom'
+    run = 'move-node-to-workspace 4'
+[[on-window-detected]]
     if.app-name-regex-substring = 'slack'
     run = 'move-node-to-workspace 4'
 [[on-window-detected]]
@@ -117,7 +121,7 @@ automatically-unhide-macos-hidden-apps = true
     run = 'move-node-to-workspace 4'
 [[on-window-detected]]
     if.app-name-regex-substring = 'chrome'
-    run = 'move-node-to-workspace 4'
+    run = 'move-node-to-workspace 3'
 [[on-window-detected]]
     if.app-name-regex-substring = 'spotify'
     run = 'move-node-to-workspace 5'
@@ -190,6 +194,8 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-6 = 'workspace 6'
     # workspace 7 = other admin apps (finder, cloud hosted files, password manager)
     ctrl-7 = 'workspace 7'
+    # workspace 8 = SAP 
+    ctrl-8 = 'workspace 8'
 
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
@@ -200,6 +206,7 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
     ctrl-shift-6 = 'move-node-to-workspace 6 --focus-follows-window'
     ctrl-shift-7 = 'move-node-to-workspace 7 --focus-follows-window'
+    ctrl-shift-8 = 'move-node-to-workspace 8 --focus-follows-window'
 
     ctrl-s = ['exec-and-forget open /Applications/Slack.app']
     ctrl-o = ['exec-and-forget open /Applications/Microsoft\ Outlook.app']

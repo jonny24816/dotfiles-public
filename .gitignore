@@ -1,3 +1,4 @@
 .env_vars_local
 .stow-local-ignore
 zsh-*
+**/*.DS_Store
