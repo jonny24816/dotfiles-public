@@ -18,7 +18,7 @@ jobs:
         env:
           PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
+          git config user.name "jonny24816"
+          git config user.email "jonathanah1996@gmail.com"
           git remote add private https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/jonny24816/dotfiles.git
           git push private main:public
