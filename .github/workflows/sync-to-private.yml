@@ -1,0 +1,24 @@
+name: Sync to Private Repo
+
+on:
+  push:
+    branches:
+      - main  # Sync when main branch is updated
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to private repo
+        env:
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git remote add private https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/jonny24816/dotfiles.git
+          git push private main:public
