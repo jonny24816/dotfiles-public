@@ -1,8 +1,8 @@
 [init]
 	defaultBranch = main
 [user]
-	email = jonathanah1996@gmail.com
-	name = Jh24816
+	email = jonathan.hughes@redwood.com
+	name = Jonathan-Hughes_redwood
 [push]
     autoSetupRemote = true
 [filter "lfs"]
@@ -14,3 +14,7 @@
 	rebase = true
 [url "github-jonny24816:jonny24816"]
   insteadOf = git@github.com:jonny24816
+[commit]
+	template = /Users/jonathanhughes/.gitmessage
+[core]
+	excludesfile = /Users/jonathanhughes/.gitignore_home

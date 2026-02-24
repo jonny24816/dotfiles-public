@@ -208,16 +208,6 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-shift-7 = 'move-node-to-workspace 7 --focus-follows-window'
     ctrl-shift-8 = 'move-node-to-workspace 8 --focus-follows-window'
 
-    ctrl-s = ['exec-and-forget open /Applications/Slack.app']
-    ctrl-o = ['exec-and-forget open /Applications/Microsoft\ Outlook.app']
-    ctrl-t = ['exec-and-forget open /Applications/Microsoft\ Teams.app']
-    ctrl-w = ['exec-and-forget open /Applications/WezTerm.app']
-    ctrl-m = ['exec-and-forget open /Applications/Spotify.app']
-    ctrl-f = ['exec-and-forget open /Applications/Firefox.app']
-    ctrl-v = ['exec-and-forget open /Applications/Visual\ Studio\ Code.app']
-    ctrl-b = ['exec-and-forget open /Applications/Google\ Chrome.app']
-
-
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     ctrl-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor

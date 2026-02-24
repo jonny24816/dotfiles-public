@@ -60,7 +60,9 @@ alias vim="nvim"
 alias c="clear"
 alias ls="ls --color"
 alias k="kubectl"
-
+# requires installation of bat for coloured output
+alias -g -- -h='-h 2>&1 | col -b| bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | col -b | bat --language=help --style=plain'
 source ~/.functions
 
 # custom functions
