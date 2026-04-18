@@ -29,15 +29,13 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            -- get access to the lspconfig plugins functions
-            local lspconfig = require("lspconfig")
-
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             -- setup the lua language server
-            lspconfig.lua_ls.setup({
+            vim.lsp.config('lua_ls', {
                 capabilities = capabilities,
             })
+            vim.lsp.enable('lua_ls')
 
             -- Set vim motion for <Space> + c + h to show code documentation about the code the cursor is currently over if available
             vim.keymap.set("n", "<leader>sd", vim.lsp.buf.hover, { desc = "[C]ode [H]over Documentation" })

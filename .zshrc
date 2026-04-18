@@ -55,6 +55,7 @@ alias g=git
 alias gco="git checkout"
 alias dca="docker-clean-active"
 alias dci="docker-clean-images"
+alias lri="launch-repo-intellij"
 alias zshrs="source ~/.zshrc"
 alias vim="nvim"
 alias c="clear"

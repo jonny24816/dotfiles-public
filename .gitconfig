@@ -17,4 +17,6 @@
 [commit]
 	template = /Users/jonathanhughes/.gitmessage
 [core]
-	excludesfile = /Users/jonathanhughes/.gitignore_home
+	excludesfile = ~/.gitignore_home
+	untrackedCache=true
+	fsmonitor=true

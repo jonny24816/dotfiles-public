@@ -16,6 +16,11 @@ docker-clean-images() {
     docker rmi -f $(docker images -a -q)
 }
 
-ea_docs_build() {
-    bundle exec jekyll serve
+docker-clean-volumes() {
+    docker volume rm $(docker volume ls -q)
+}
+
+launch-repo-intellij() {
+    . ./setenv
+    /Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea .
 }

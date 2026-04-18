@@ -1,0 +1,19 @@
+{
+  "model": "opusplan",
+  "statusLine": {
+    "type": "command",
+    "command": "/bin/bash ~/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "jdtls-lsp@claude-plugins-official": true,
+    "fa-ticket-master@Redwood-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "Redwood-skills": {
+      "source": {
+        "source": "github",
+        "repo": "redwood-main/LLM-skills"
+      }
+    }
+  }
+}
